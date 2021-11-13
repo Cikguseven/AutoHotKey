@@ -5,13 +5,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Persistent
 CoordMode, ToolTip, screen
+CoordMode, Mouse, Screen
+
 SetTimer, WatchCursor, 50
-`::ExitApp
-return
 
 WatchCursor:
-CoordMode, mouse, Screen ; Coordinates are relative to the desktop (entire screen).
-MouseGetPos, x, y, id_1, control_1
+MouseGetPos, x, y
 
-ToolTip, x: %x% y: %y%, % A_ScreenWidth-0, % A_ScreenHeight-1080
-return
+ToolTip, x: %x% y: %y%, 1920, 0
+
+`::ExitApp
