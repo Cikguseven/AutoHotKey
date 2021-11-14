@@ -17,7 +17,7 @@ F8::
 CoordMode, Mouse, screen
 
 Run, https://www.mousehuntgame.com/friends.php
-Sleep % Rand(3999, 4150)
+Sleep % Rand(3899, 4050)
 
 Send ^{0}
 Sleep % Rand(290, 311)
@@ -28,13 +28,13 @@ Sleep % Rand(240, 261)
 Send ^{WheelUp}
 Sleep % Rand(300, 312)
 
-Loop, 20
+Loop, 15
 {
 	MouseClick, L, % Rand(1150, 1195), y
-	Sleep % Rand(309, 337)
+	Sleep % Rand(301, 309)
 
 	MouseClick, L, % Rand(1220, 1270), y
-	Sleep % Rand(309, 337)
+	Sleep % Rand(301, 309)
 
 	Send {Down}
 	Sleep % Rand(199, 223)
@@ -45,4 +45,20 @@ Loop, 20
 	Send {Down}
 	Sleep % Rand(199, 213)
 }
-return
+
+Loop, 5
+{
+	MouseClick, L, % Rand(1220, 1270), y
+	Sleep % Rand(301, 309)
+
+	Send {Down}
+	Sleep % Rand(199, 223)
+
+	Send {Down}
+	Sleep % Rand(189, 233)
+
+	Send {Down}
+	Sleep % Rand(199, 213)
+}
+
+ExitApp
