@@ -23,42 +23,32 @@ Send ^{0}
 Sleep % Rand(290, 311)
 
 Send ^{WheelUp}
-Sleep % Rand(240, 261)
+Sleep % Rand(201, 219)
 
 Send ^{WheelUp}
-Sleep % Rand(300, 312)
+Sleep % Rand(201, 219)
 
 Loop, 15
 {
 	MouseClick, L, % Rand(1150, 1195), y
-	Sleep % Rand(301, 309)
+	Sleep % Rand(201, 219)
 
 	MouseClick, L, % Rand(1220, 1270), y
-	Sleep % Rand(301, 309)
+	Sleep % Rand(201, 219)
 
-	Send {Down}
-	Sleep % Rand(199, 223)
-
-	Send {Down}
-	Sleep % Rand(189, 233)
-
-	Send {Down}
-	Sleep % Rand(199, 213)
+	Send {Down 3}
+	Sleep % Rand(201, 219)
 }
 
 Loop, 5
 {
 	MouseClick, L, % Rand(1220, 1270), y
-	Sleep % Rand(301, 309)
+	Sleep % Rand(201, 219)
 
-	Send {Down}
-	Sleep % Rand(199, 223)
-
-	Send {Down}
-	Sleep % Rand(189, 233)
-
-	Send {Down}
-	Sleep % Rand(199, 213)
+	Send {Down 3}
+	Sleep % Rand(201, 219)
 }
+
+Send ^{0}
 
 ExitApp
