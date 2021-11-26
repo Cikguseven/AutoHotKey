@@ -23,7 +23,7 @@ Send ^{0}
 Sleep % Rand(300, 310)
 
 Send ^{WheelUp}
-Sleep % Rand(210, 220)
+Sleep % Rand(300, 310)
 
 Send ^{WheelUp}
 Sleep % Rand(210, 220)
