@@ -9,7 +9,7 @@ Rand(min, max){
     return rand
 }
 
-Random, y, 1030, 1033
+Random, y, 1003, 1006
 
 `::ExitApp
 
@@ -17,13 +17,16 @@ F8::
 CoordMode, Mouse, screen
 
 Run, https://www.mousehuntgame.com/friends.php
-Sleep % Rand(4500, 4600)
+Sleep % Rand(4400, 4500)
+
+MouseClick, L, % Rand(1, 400), % Rand(150, 1000)
+Sleep % Rand(210, 220)
 
 Send ^{0}
-Sleep % Rand(300, 310)
+Sleep % Rand(310, 320)
 
 Send ^{WheelUp}
-Sleep % Rand(300, 310)
+Sleep % Rand(310, 320)
 
 Send ^{WheelUp}
 Sleep % Rand(210, 220)
@@ -50,5 +53,9 @@ Loop, 5
 }
 
 Send ^{0}
+
+Send {Home}
+
+Send ^{w}
 
 ExitApp
