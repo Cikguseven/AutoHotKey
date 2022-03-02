@@ -9,7 +9,8 @@ Rand(min, max){
     return rand
 }
 
-Random, y, 1003, 1006
+;VRift Random, y, 1030, 1035
+Random, y, 1004, 1009
 
 `::ExitApp
 
@@ -23,39 +24,26 @@ MouseClick, L, % Rand(1, 400), % Rand(150, 1000)
 Sleep % Rand(210, 220)
 
 Send ^{0}
-Sleep % Rand(310, 320)
+Sleep % Rand(350, 360)
+
+Send ^{WheelUp}
+Sleep % Rand(390, 399)
 
 Send ^{WheelUp}
 Sleep % Rand(310, 320)
 
-Send ^{WheelUp}
-Sleep % Rand(210, 220)
-
-Loop, 15
+Loop, 20
 {
 	MouseClick, L, % Rand(1150, 1195), y
 	Sleep % Rand(100, 120)
 
 	MouseClick, L, % Rand(1220, 1270), y
-	Sleep % Rand(200, 220)
+	Sleep % Rand(140, 150)
 
 	Send {Down 3}
-	Sleep % Rand(200, 220)
-}
-
-Loop, 5
-{
-	MouseClick, L, % Rand(1220, 1270), y
-	Sleep % Rand(200, 220)
-
-	Send {Down 3}
-	Sleep % Rand(200, 220)
+	Sleep % Rand(180, 190)
 }
 
 Send ^{0}
-
-Send {Home}
-
-Send ^{w}
 
 ExitApp
