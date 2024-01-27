@@ -9,8 +9,10 @@ Rand(min, max){
     return rand
 }
 
-;VRift Random, y, 1030, 1035
-Random, y, 1004, 1009
+;Random, y, 1030, 1035 ;VRift 
+Random, y, 1004, 1009 ;Floating Islands
+;Random, y, 920, 930
+;Random, y, 1038, 1039
 
 `::ExitApp
 
@@ -18,7 +20,7 @@ F8::
 CoordMode, Mouse, screen
 
 Run, https://www.mousehuntgame.com/friends.php
-Sleep % Rand(4400, 4500)
+Sleep % Rand(4000, 4100)
 
 MouseClick, L, % Rand(1, 400), % Rand(150, 1000)
 Sleep % Rand(210, 220)
@@ -27,10 +29,10 @@ Send ^{0}
 Sleep % Rand(350, 360)
 
 Send ^{WheelUp}
-Sleep % Rand(390, 399)
+Sleep % Rand(490, 499)
 
 Send ^{WheelUp}
-Sleep % Rand(310, 320)
+Sleep % Rand(210, 220)
 
 Loop, 20
 {
